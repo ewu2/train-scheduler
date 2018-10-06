@@ -1,0 +1,22 @@
+.jumbotron {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.918);
+    border-radius: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.form-group,
+.panel-title {
+    color: whitesmoke;
+}
+
+.add-title {
+    margin-top: 50px;
+}
+
+.tag-line {
+    font-style: italic;
+}

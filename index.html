@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>train of thought.</title>
+
+    <!--Added link to Reset Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
+	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Added link to CSS Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+        <h1><span class="glyphicon glyphicon-road"></span>Train of Thought.</h1>
+        <cite class="tag-line">
+            Stay on track with a train schedule calculator. Let your mind wander.
+    </div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div id="content">
+                        <table class="table table-hover table-dark">
+                            <thead>
+                                <h3 class="panel-title">Current Train of Thought(s)</h3>
+                            </thead>
+
+                            <thead>
+                                <tr>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Name of Train</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Coming In</th>
+                                <th scope="col">Cancel</th>
+                                </tr>
+                            </thead>
+                                <tbody id="table-content">
+                                </tbody>
+                        </table>
+					</div>
+				</div>
+			</div>
+        </div>
+
+		<div class="row">
+			<div class="col-md-12">
+                <div class="panel panel-default">
+                    <div id="content">
+                        <table class="table table-hover table-dark">
+                            <thead>
+                                <h3 class="panel-title add-title">Additional Train of Thought</h3>
+                            </thead>
+                        </table>
+                    </div>
+
+					<div class="panel-body">
+						<form id="form-id">
+						  <div class="form-group">
+						    <label for="train-name">Name of Train</label>
+						    <input type="text" class="form-control" id="train-name" aria-describedby="train-name" placeholder="">
+						  </div>
+						  <div class="form-group">
+						    <label for="train-destination">Destination</label>
+						    <input type="text" class="form-control" id="train-destination" aria-describedby="train-destination" placeholder="">
+						  </div>
+						  <div class="form-group">
+						    <label for="first-train-time">Time of First Train (HH:mm • Military Time)</label>
+						    <input type="text" class="form-control" id="first-train-time" aria-describedby="first-train-time" placeholder="">
+						  </div>
+						  <div class="form-group">
+						    <label for="frequency">Frequency (minutes)</label>
+						    <input type="number" class="form-control" id="frequency" aria-describedby="frequency" placeholder="">
+                          </div>
+                          <div class="text-center">
+                              <br>
+                              <button type="submit" class="btn btn-dark" id="submit">Submit</button>
+                          </div>
+                          <br><br>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Added link to Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+	<!-- Link to Moment.js should go here -->
+  	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<!-- Added link to Javascript-->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
