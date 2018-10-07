@@ -38,8 +38,8 @@ $("#form-id").on("submit", function (event) {
 
 database.ref().orderByChild("dateAdded").on("child_added", function (childSnapshot) {
 
-    var update = $("<button>").html("<span class='glyphicon glyphicon-edit'></span>").addClass("update").attr("data-index", index).attr("data-key", childSnapshot.key);
-    var cancel = $("<button>").html("<span class='glyphicon glyphicon-remove'></span>").addClass("cancel").attr("data-index", index).attr("data-key", childSnapshot.key);
+    var update = $("<button>").html("<i class='fas fa-edit'></i>").addClass("update").attr("data-index", index).attr("data-key", childSnapshot.key);
+    var cancel = $("<button>").html("<i class='fas fa-times-circle'></i>").addClass("cancel").attr("data-index", index).attr("data-key", childSnapshot.key);
 
   var firstTrainTime = childSnapshot.val().firstTrainTime;
   var timeFrequency = parseInt(childSnapshot.val().frequency);
@@ -86,9 +86,7 @@ database.ref().orderByChild("dateAdded").on("child_added", function (childSnapsh
  index++;
     
 }, function (error) {
-
     alert(error.code);
-
 });
 
 function removeRow () {

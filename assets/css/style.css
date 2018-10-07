@@ -20,3 +20,16 @@ body {
 .tag-line {
     font-style: italic;
 }
+
+.cancel {
+    color: whitesmoke;
+    background: none;
+    border-style: none;
+    font-size: 20px;
+}
+
+.update {
+    color: whitesmoke;
+    background: none;
+    border-style: none;
+}
